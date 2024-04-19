@@ -15,15 +15,15 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Check for '[release]' in commit message
-        id: check_release_message
-        run: echo "::set-output name=RELEASE::$(git log -1 --pretty=format:%s | grep -q '\[release\]' && echo 'true' || echo 'false')"
-
       - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Install dependencies
         run: yarn install
+
+      - name: Check for '[release]' in commit message
+        id: check_release_message
+        run: echo "::set-output name=RELEASE::$(git log -1 --pretty=format:%s | grep -q '\[release\]' && echo 'true' || echo 'false')"
 
       - name: Build package
         if: steps.check_release_message.outputs.RELEASE == 'true' || github.event.inputs.force_build == 'true'
