@@ -31,9 +31,9 @@ jobs:
       
       - name: Bump version and push
         if: steps.check_release_message.outputs.RELEASE == 'true' || github.event.inputs.force_build == 'true'
-        run: 
+        run: |
           git config --global user.email "hazelyu913@gmail.com"
-          git config --global user.name "GitHub Action"
+          git config --global user.name "GitHub Actions"
           yarn run bump-version
           git push --follow-tags
           
