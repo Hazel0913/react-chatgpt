@@ -28,18 +28,15 @@ jobs:
       - name: Build package
         if: steps.check_release_message.outputs.RELEASE == 'true' || github.event.inputs.force_build == 'true'
         run: yarn build
-
-      - name: Bump version
-        if: steps.check_release_message.outputs.RELEASE == 'true' || github.event.inputs.force_build == 'true'
-        run: yarn run bump-version
       
-      - name: Commit version bump
+      - name: Bump version and push
         if: steps.check_release_message.outputs.RELEASE == 'true' || github.event.inputs.force_build == 'true'
         run: 
           git config --local user.email "gjl87910lq@gmail.com"
           git config --local user.name "GitHub Action"
+          yarn run bump-version
           git push --follow-tags
-
+          
       - name: Publish to npm
         if: steps.check_release_message.outputs.RELEASE == 'true' || github.event.inputs.force_build == 'true'
         run: yarn publish --access public
