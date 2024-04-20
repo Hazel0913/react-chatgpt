@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.94 (2024-04-20)
+
+
+### Bug Fixes
+
+* fw ([3b97f27](https://github.com/mystist/react-chatgpt/commit/3b97f276433291e70b73116721562be98d355033))
+
 ### [0.0.93](https://github.com/mystist/react-chatgpt/compare/v0.0.92...v0.0.93) (2024-02-25)
 
 
