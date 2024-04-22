@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.98](https://github.com/Hazel0913/react-chatgpt/compare/v0.0.97...v0.0.98) (2024-04-22)
+
+
+### Features
+
+* [release] ([38e0427](https://github.com/Hazel0913/react-chatgpt/commit/38e042716eaec2008293cdd0f90e939c2ea61c39))
+
 ### 0.0.97 (2024-04-22)
 
 
