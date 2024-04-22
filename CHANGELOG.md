@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.96](https://github.com/mystist/react-chatgpt/compare/v0.0.95...v0.0.96) (2024-04-22)
+
+
+### Bug Fixes
+
+* [release] ([76f1c6f](https://github.com/mystist/react-chatgpt/commit/76f1c6f76dbab666df1cde7ef461eb4efac4a1f0))
+
 ### 0.0.95 (2024-04-22)
 
 
